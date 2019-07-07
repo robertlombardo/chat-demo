@@ -11,7 +11,7 @@ export const initial_state = {
     ],
 }
 
-function appReducer(state=initial_state, action) {
+export default function (state=initial_state, action) {
     switch (action.type) {
 
         case GOT_NEW_CHAT_MESSAGE: {
@@ -26,5 +26,3 @@ function appReducer(state=initial_state, action) {
         default: return state
     }
 }
-
-export default appReducer
