@@ -1,0 +1,47 @@
+.app-wrapper {
+  max-width: calc(768px + 16px * 2);
+  margin: 0 auto;
+  display: flex;
+  min-height: 100%;
+  padding: 0 16px;
+  flex-direction: column;
+}
+
+.app-title {
+    width: 100%;
+    text-align: center;
+}
+
+.message-log-wrapper {
+    margin: 50px 0; 
+}
+
+.message-log-srollable {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.message-log-entry {
+    display: flex;
+    flex-direction: row;
+}
+
+.message-sender {
+    font-weight: bold;
+}
+
+.message-body {
+    margin-left: 10px;
+}
+
+.chat-input-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chat-send-btn {
+    width: 120px;
+    height: 48px;
+}

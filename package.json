@@ -1,0 +1,81 @@
+{
+  "name": "chat-demo",
+  "version": "1.0.0",
+  "description": "bare bones full stack websockets chat demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertlombardo/chat-demo.git"
+  },
+  "keywords": [
+    "chat",
+    "websockets"
+  ],
+  "author": "Robert Lombardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertlombardo/chat-demo/issues"
+  },
+  "homepage": "https://github.com/robertlombardo/chat-demo#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@material-ui/core": "^4.2.0",
+    "chalk": "^2.4.2",
+    "compression": "1.7.4",
+    "express": "4.17.1",
+    "ip": "1.1.5",
+    "minimist": "1.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "7.1.0",
+    "react-router-dom": "^5.0.1",
+    "redux": "4.0.1",
+    "redux-saga": "1.0.3",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "whatwg-fetch": "3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-class-properties": "7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "7.4.4",
+    "@babel/plugin-transform-react-constant-elements": "7.2.0",
+    "@babel/plugin-transform-react-inline-elements": "7.2.0",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "^7.4.4",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "10.0.2",
+    "babel-loader": "8.0.6",
+    "babel-plugin-dynamic-import-node": "2.2.0",
+    "babel-plugin-lodash": "3.3.4",
+    "babel-plugin-react-intl": "3.2.1",
+    "babel-plugin-react-transform": "3.0.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.24",
+    "circular-dependency-plugin": "5.0.2",
+    "css-loader": "3.0.0",
+    "eventsource-polyfill": "0.9.6",
+    "exports-loader": "0.7.0",
+    "file-loader": "4.0.0",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "imports-loader": "0.8.0",
+    "node-sass": "^4.12.0",
+    "null-loader": "3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "0.23.1",
+    "url-loader": "2.0.0",
+    "webpack": "4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-middleware": "3.7.0",
+    "webpack-hot-middleware": "2.25.0"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  }
+}
