@@ -26,8 +26,7 @@ exports.init = express_app => {
 
         socket.on('error', socket_err => console.log({socket_err}))
 
-        socket.join('global')
-
+        // initialize a user object as a property on the socket
         const now = new Date().getTime().toString()
         socket.user = {
             id           : now,
@@ -35,6 +34,10 @@ exports.init = express_app => {
             color        : '#' + (Math.random()*0xFFFFFF<<0).toString(16) // assign a random color
         }
 
+        // all users subscribe to the 'global' channel
+        socket.join('global')
+
+        // alert client that init is complete
         socket.emit('connected')
     })
 }

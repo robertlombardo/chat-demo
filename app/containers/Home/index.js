@@ -1,8 +1,8 @@
-import { connect }   from 'react-redux'
+import { connect } from 'react-redux'
 import { 
     sendChatMessage,
-}                    from './actions'
-import Home           from './Home'
+}                  from './actions'
+import Home        from './Home'
 
 const mapStateToProps = state => {
     return {...state.home}

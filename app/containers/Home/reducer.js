@@ -1,11 +1,6 @@
 import { GOT_NEW_CHAT_MESSAGE } from './actions'
 
 export const initial_state = {
-    api_socket  : undefined,
-    user        : {
-        id           : undefined,
-        display_name : '???'
-    },
     message_log : [
         {user_id: 'app', display_name: 'Rob', message_body: 'Welcome to the demo, baby!', time_stamp: new Date().getTime()}
     ],
