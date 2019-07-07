@@ -1,6 +1,5 @@
 import io from 'socket.io-client'
 import {
-    API_SOCKET_CONNECTED,
     API_SOCKET_ERROR,
     SEND_CHAT_MESSAGE,
     GOT_NEW_CHAT_MESSAGE,
@@ -26,15 +25,9 @@ function* watchSocketChannel() {
 }
 
 function* connectAPISocket() {
-    const { protocol, hostname } = window.location
-
-    api_socket = io.connect(/*`${protocol}//${hostname}:1337`*/window.location.host, {
+    api_socket = io.connect(window.location.host, {
         transports : ['websocket', 'polling'],
         path       : '/api'
-    })
-
-    api_socket.on('connected', () => {
-        socket_channel.put({type: API_SOCKET_CONNECTED, api_socket})
     })
 
     api_socket.on('error', api_socket_err => {

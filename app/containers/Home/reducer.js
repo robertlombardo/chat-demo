@@ -1,7 +1,4 @@
-import {
-    API_SOCKET_CONNECTED,
-    GOT_NEW_CHAT_MESSAGE,
-} from './actions'
+import { GOT_NEW_CHAT_MESSAGE } from './actions'
 
 export const initial_state = {
     api_socket  : undefined,
@@ -17,19 +14,10 @@ export const initial_state = {
 function appReducer(state=initial_state, action) {
     switch (action.type) {
 
-        case API_SOCKET_CONNECTED: {
-            const new_state = {
-                ...state,
-                api_socket: action.api_socket
-            }
-
-            return new_state
-        }
-
         case GOT_NEW_CHAT_MESSAGE: {
             const new_state = {
                 ...state,
-                message_log: [].concat(state.message_log, [action.message_data])
+                message_log: [].concat(state.message_log, [action.message_data]),
             }
         
             return new_state

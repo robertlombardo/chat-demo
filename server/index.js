@@ -1,6 +1,5 @@
 const express     = require('express')
 const { resolve } = require('path')
-const argv        = require('minimist')(process.argv.slice(2))
 const sockets     = require('./sockets')
 const setup       = require('./middlewares/frontendMiddleware')
 
