@@ -28,7 +28,7 @@ function* watchSocketChannel() {
 function* connectAPISocket() {
     const { protocol, hostname } = window.location
 
-    api_socket = io.connect(`${protocol}//${hostname}:1337`, {
+    api_socket = io.connect(/*`${protocol}//${hostname}:1337`*/window.location.host, {
         transports : ['websocket', 'polling'],
         path       : '/api'
     })
