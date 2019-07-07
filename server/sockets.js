@@ -3,7 +3,7 @@ const SocketIO  = require('socket.io')
 const Listeners = require('./listeners')
 
 // config
-const PORT    = process.env.PORT || 1337
+const PORT    = 1337
 const OPTIONS = {
     origins    : '*:*',
     transports : ['websocket', 'polling'],
